@@ -12,7 +12,7 @@ namespace ByteSheild
         {
             base.OnCreate(savedInstanceState);
             // Prevent screenshots and screen recording on Android
-             Window?.SetFlags(Android.Views.WindowManagerFlags.Secure, Android.Views.WindowManagerFlags.Secure);
+            //Window?.SetFlags(Android.Views.WindowManagerFlags.Secure, Android.Views.WindowManagerFlags.Secure);
             CrossFingerprint.SetCurrentActivityResolver(() => this);
         }
     }

@@ -63,7 +63,7 @@
                                 <Entry x:Name="PasswordEntry" 
                                        Grid.Column="0"
                                        Placeholder="Type a password..." 
-                                       IsPassword="True"
+                                       IsPassword="False"
                                        TextColor="{AppThemeBinding Light=Black, Dark=White}" 
                                        PlaceholderColor="#6A7A90" 
                                        BackgroundColor="Transparent"

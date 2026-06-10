@@ -5,7 +5,7 @@ namespace ByteSheild
     public partial class MainDashboardPage : ContentPage
     {
         // Cached colors to prevent parsing on every keystroke
-        private static readonly Color InactiveColor = Color.FromArgb("#6A7A90");
+        private static readonly Color InactiveColor = Color.FromArgb("#008000");
         private static readonly Color DangerColor = Color.FromArgb("#F44336");
         private static readonly Color WarningColor = Color.FromArgb("#FF9800");
         private static readonly Color SuccessColor = Color.FromArgb("#00D4AA");
