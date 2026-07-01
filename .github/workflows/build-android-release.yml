@@ -1,0 +1,62 @@
+name: Build Android Release APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'ByteSheild/**'
+      - '.github/workflows/build-android-release.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-android:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore .NET workloads
+      run: dotnet workload restore
+
+    - name: Build Android Release APK
+      run: |
+        cd ByteSheild
+        dotnet publish ByteSheild.csproj -f net10.0-android -c Release -p:AndroidPackageFormat=apk
+      env:
+        CI: true
+
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ByteShield-Android-Release
+        path: ByteSheild/bin/Release/net10.0-android/**/*.apk
+        if-no-files-found: error
+
+    - name: Upload Build Output
+      uses: actions/upload-artifact@v4
+      with:
+        name: Android-Build-Output
+        path: ByteSheild/bin/Release/net10.0-android/
+        if-no-files-found: warn
+
+    - name: Create Release
+      if: success()
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: android-release-${{ github.run_number }}
+        name: Android Release - Build ${{ github.run_number }}
+        body: Android APK release build
+        draft: false
+        prerelease: true
+        files: |
+          ByteSheild/bin/Release/net10.0-android/**/*.apk
