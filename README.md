@@ -1,7 +1,9 @@
 # 🛡️ ByteShield
 **Digital Hygiene & Personal Security Mobile App**
 
-**Tags:** Mobile App, Security, [![CI/CD](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml/badge.svg?branch=master)](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml)
+[![Build Status](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml/badge.svg?branch=master)](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml) [![Latest Release](https://img.shields.io/github/v/release/osman-builds/ByteShield?label=latest%20release)](https://github.com/osman-builds/ByteShield/releases)
+
+**Tags:** Mobile App, Security
 
 ByteShield is a state-of-the-art mobile application built with .NET MAUI, aimed at safeguarding your personal digital identity. By prioritizing "Local-First" end-to-end encrypted storage, biometric authentication, and strict personal data hygiene, ByteShield ensures that you remain firmly in control of your digital footprint.
 
