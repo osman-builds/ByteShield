@@ -1,6 +1,8 @@
 # 🛡️ ByteShield
 **Digital Hygiene & Personal Security Mobile App**
 
+**Tags:** Mobile App, Security, [![CI/CD](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml/badge.svg?branch=master)](https://github.com/osman-builds/ByteShield/actions/workflows/build-android-release.yml)
+
 ByteShield is a state-of-the-art mobile application built with .NET MAUI, aimed at safeguarding your personal digital identity. By prioritizing "Local-First" end-to-end encrypted storage, biometric authentication, and strict personal data hygiene, ByteShield ensures that you remain firmly in control of your digital footprint.
 
 ---
@@ -81,7 +83,7 @@ In the Settings page, you can toggle Dark/Light mode and setup a 4-digit App Pas
 
 * **Developer:** Abdullahi Osman
 * **Version:** 1.0.24 (Stable Release)
-* **License:** Closed Source / Proprietary (See LICENSE.txt)
+* **License:** MIT (See LICENSE.txt)
 
 ---
 

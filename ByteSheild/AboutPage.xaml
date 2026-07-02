@@ -21,9 +21,9 @@
                     </Border.Shadow>
                     <StackLayout Spacing="8">
                         <Label Text="Developer: Abdullahi Ahmed Osman" FontSize="16" FontAttributes="Bold" TextColor="{AppThemeBinding Light=#333333, Dark=White}" HorizontalOptions="Center" />
-                        <Label Text="I am a 2nd year SWE student. This app is a secure vault for your sensitive data." FontSize="14" TextColor="{AppThemeBinding Light=#666666, Dark=#B0B0B0}" FontAttributes="Italic" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                        <Label Text="Mobile software engineer focused on secure .NET MAUI applications, local-first architecture, authentication flows, and polished cross-platform UX." FontSize="14" TextColor="{AppThemeBinding Light=#666666, Dark=#B0B0B0}" FontAttributes="Italic" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
                         <BoxView HeightRequest="1" Color="{AppThemeBinding Light=#E0E0E0, Dark=#3A4A6A}" Margin="20,5,20,5" />
-                        <Label Text="Tech Stack: .NET MAUI, C#, XAML, SQLite with SQLCipher, DotNetEnv, Plugin.Fingerprint" FontSize="13" TextColor="{AppThemeBinding Light=#888888, Dark=#909090}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                        <Label Text="Focus Areas: .NET MAUI, C#, XAML, secure local storage, biometric auth, and mobile-first product design" FontSize="13" TextColor="{AppThemeBinding Light=#888888, Dark=#909090}" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
                     </StackLayout>
                 </Border>
 
@@ -79,7 +79,7 @@
                             <TapGestureRecognizer Tapped="OnOpenSourceLicensesTapped" />
                         </Border.GestureRecognizers>
                         <Grid>
-                            <Label Text="End User License Agreement" VerticalOptions="Center" FontAttributes="Bold" TextColor="{AppThemeBinding Light=Black, Dark=White}" />
+                            <Label Text="MIT License" VerticalOptions="Center" FontAttributes="Bold" TextColor="{AppThemeBinding Light=Black, Dark=White}" />
                             <Label Text=">" HorizontalOptions="End" VerticalOptions="Center" TextColor="#00D4AA" FontAttributes="Bold" />
                         </Grid>
                     </Border>

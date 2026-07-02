@@ -60,17 +60,30 @@ namespace ByteSheild
 
         private async void OnOpenSourceLicensesTapped(object? sender, TappedEventArgs e)
         {
-            // Use modern C# 11 raw string literals for cleaner multiline text
             const string licenses = """
-                END USER LICENSE AGREEMENT (CLOSED SOURCE)
+                MIT License
 
-                Copyright (c) 2026 Abdullahi Osman. All Rights Reserved.
+                Copyright (c) 2026 Abdullahi Osman
 
-                This software ("ByteShield") is the proprietary intellectual property of Abdullahi Osman. This is a closed-source license. You may not distribute, sub-license, rent, lease, alter, reverse-engineer, modify, or create derivative works from this software without explicit written permission from the author.
+                Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:
 
-                IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, DATA LOSS, SECURITY BREACHES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.
+
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                SOFTWARE.
                 """;
-            await DisplayAlertAsync("End User License Agreement", licenses, "OK");
+            await DisplayAlertAsync("MIT License", licenses, "OK");
         }
 
         private async void OnSelfDestructTapped(object? sender, TappedEventArgs e)
